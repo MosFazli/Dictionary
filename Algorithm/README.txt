@@ -3,7 +3,7 @@ you can open it and run main.fxml for Gtaphic mode.
 you should to set Database Address in Source code.
 
 
-# TTS
+TTS:
 Contains JAR files for FreeTTS
 
 
@@ -35,7 +35,7 @@ these instructions:
  	   and deposited into the lib directory.
 
 
-### Mostafa Fazli
-### Danial Bayati
-### Foad Ataei
-### Ali Toosi
+Mostafa Fazli
+Danial Bayati
+Foad Ataei
+Ali Toosi
