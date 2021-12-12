@@ -1,3 +1,9 @@
+This application coding with Java (Actually JetBrains IntelliJ)
+you can open it and run main.fxml for Gtaphic mode.
+you should to set Database Address in Source code.
+
+
+# TTS
 Contains JAR files for FreeTTS
 
 
@@ -27,3 +33,9 @@ these instructions:
         3. If the binary license agreement is acceptable, accept
 	   it by clicking "I Agree". The jsapi.jar file will be unpacked 
  	   and deposited into the lib directory.
+
+
+### Mostafa Fazli
+### Danial Bayati
+### Foad Ataei
+### Ali Toosi
