@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="TranslatePage">
+   <children>
+      <StackPane prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <ImageView fitHeight="437.0" fitWidth="607.0" opacity="0.99" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images1.jpg" />
+               </image>
+               <effect>
+                  <BoxBlur />
+               </effect>
+            </ImageView>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <Label fx:id="persianWord" alignment="CENTER" prefHeight="182.0" prefWidth="565.0" text="نمونه" textAlignment="CENTER" textFill="#030303" textOverrun="CLIP" wrapText="true">
+                     <font>
+                        <Font name="Yu Gothic Medium" size="25.0" />
+                     </font>
+                     <effect>
+                        <ColorAdjust />
+                     </effect>
+                  </Label>
+                  <TextArea fx:id="englishWord" prefHeight="107.0" prefWidth="413.0" promptText=" Enter english word to translate" text="Sample" wrapText="true">
+                     <VBox.margin>
+                        <Insets bottom="30.0" left="100.0" right="100.0" top="30.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="Lucida Bright Italic" size="18.0" />
+                     </font>
+                  </TextArea>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Button fx:id="transB" alignment="CENTER" mnemonicParsing="false" onAction="#translate" prefHeight="40.0" prefWidth="100.0" style="-fx-background-color: #FDFEFE;" text="Translate">
+                           <font>
+                              <Font name="Lucida Bright" size="18.0" />
+                           </font>
+                           <textFill>
+                              <LinearGradient endX="1.0" endY="1.0">
+                                 <stops>
+                                    <Stop>
+                                       <color>
+                                          <Color green="0.06061459332704544" blue="1.0" />
+                                       </color>
+                                    </Stop>
+                                    <Stop offset="1.0">
+                                       <color>
+                                          <Color red="1.0" />
+                                       </color>
+                                    </Stop>
+                                 </stops>
+                              </LinearGradient>
+                           </textFill>
+                        </Button>
+                        <Label text="    " />
+                        <Button fx:id="PlayButt" alignment="CENTER" mnemonicParsing="false" onAction="#play" prefHeight="40.0" prefWidth="80.0" style="-fx-background-color: #FDFEFE;" text="Play">
+                           <textFill>
+                              <LinearGradient endX="1.0" endY="1.0">
+                                 <stops>
+                                    <Stop>
+                                       <color>
+                                          <Color red="1.0" />
+                                       </color>
+                                    </Stop>
+                                    <Stop offset="1.0">
+                                       <color>
+                                          <Color red="0.11666666716337204" blue="1.0" opacity="0.9688581228256226" />
+                                       </color>
+                                    </Stop>
+                                 </stops>
+                              </LinearGradient>
+                           </textFill>
+                           <font>
+                              <Font size="18.0" />
+                           </font></Button>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </StackPane>
+   </children>
+</AnchorPane>

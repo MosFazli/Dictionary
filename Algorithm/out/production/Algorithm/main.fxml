@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Main">
+   <children>
+      <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="400.0" prefWidth="400.0">
+         <children>
+            <StackPane prefHeight="150.0" prefWidth="200.0">
+               <children>
+                  <ImageView fitHeight="400.0" opacity="0.65" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images.jpg" />
+                     </image>
+                     <effect>
+                        <BoxBlur height="10.0" width="10.0" />
+                     </effect>
+                  </ImageView>
+                  <VBox alignment="CENTER" focusTraversable="true" prefHeight="200.0" prefWidth="100.0" spacing="20.0">
+                     <children>
+                        <Label text="Dictionary" textFill="#1907ba">
+                           <font>
+                              <Font name="JetBrains Mono Regular" size="64.0" />
+                           </font>
+                           <effect>
+                              <ColorAdjust brightness="0.11" contrast="0.97" hue="-0.13" saturation="0.63" />
+                           </effect>
+                        </Label>
+                        <Label text="English to Persian" textFill="RED">
+                           <font>
+                              <Font size="36.0" />
+                           </font>
+                           <effect>
+                              <DropShadow height="27.18" radius="12.2525" spread="0.49" width="23.83">
+                                 <color>
+                                    <Color red="0.7078947424888611" green="0.7078947424888611" blue="0.7078947424888611" />
+                                 </color>
+                              </DropShadow>
+                           </effect>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <VBox.margin>
+                              <Insets bottom="70.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Button fx:id="startT" mnemonicParsing="false" onAction="#translatee" style="-fx-background-color: #FDFEFE;" stylesheets="@ButtonS.css" text="Start Translating">
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                           <font>
+                              <Font name="Lucida Bright" size="18.0" />
+                           </font>
+                           <effect>
+                              <DropShadow blurType="ONE_PASS_BOX">
+                                 <color>
+                                    <Color red="0.3815789520740509" green="0.1632310003042221" blue="0.1632310003042221" />
+                                 </color>
+                              </DropShadow>
+                           </effect>
+                           <textFill>
+                              <LinearGradient endX="1.0" endY="1.0">
+                                 <stops>
+                                    <Stop>
+                                       <color>
+                                          <Color red="0.28333333134651184" blue="1.0" />
+                                       </color>
+                                    </Stop>
+                                    <Stop offset="1.0">
+                                       <color>
+                                          <Color red="1.0" />
+                                       </color>
+                                    </Stop>
+                                 </stops>
+                              </LinearGradient>
+                           </textFill>
+                        </Button>
+                     </children>
+                     <StackPane.margin>
+                        <Insets />
+                     </StackPane.margin>
+                     <padding>
+                        <Insets bottom="50.0" />
+                     </padding>
+                  </VBox>
+               </children>
+            </StackPane>
+         </children></VBox>
+   </children>
+</AnchorPane>
